@@ -9,7 +9,8 @@ Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 
 
 <action name="hello" class="hello.Hello">  
-<result name="success">/pages/helloWorld.jsp</result>  
+<result name="success">/pages/helloWorld.jsp</result>
+<result name="input">/pages/welcome.jsp</result>    
 </action>  
   
 </package>  
