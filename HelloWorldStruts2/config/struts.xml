@@ -7,11 +7,20 @@ Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <result>/pages/welcome.jsp</result>
 </action>  
 
-
 <action name="hello" class="hello.Hello">  
 <result name="success">/pages/helloWorld.jsp</result>
 <result name="input">/pages/welcome.jsp</result>    
 </action>  
-  
-</package>  
+ </package>
+ 
+ <package name="newPackage" namespace="/myWorldLogin" extends="struts-default">
+ <action name="login">
+ <result>/pages/login.jsp</result>
+ </action>
+ <action name="loginAction" class="login.LoginAction" method="loginUser">
+ <result name="success">/pages/welcome.jsp</result>
+ <result name="error">/pages/error.jsp</result>
+ <result name ="input">/pages/login.jsp</result>
+ </action>
+ </package>  
 </struts>  
