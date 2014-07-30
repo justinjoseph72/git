@@ -22,4 +22,18 @@
 <property name="basic" value="10000"></property>
 <property name="TA" value="100"></property>
 </bean>
+<bean id="pointA" class="com.justin.shapeImpl.Point">
+<property name="x" value="0"></property>
+<property name="y" value="0"></property>
+</bean>
+<bean id="pointB" class="com.justin.shapeImpl.Point">
+<property name="x" value="10"></property>
+<property name="y" value="0"></property>
+</bean>
+<bean id="pointC" class="com.justin.shapeImpl.Point">
+<property name="x" value="0"></property>
+<property name="y" value="10"></property>
+</bean>
+<!-- autowire example TrianlgePoint has member variables same name as pointA,pointB and pointC -->
+<bean id="trianglePoint" class="com.justin.shapeImpl.TrianglePoint" autowire="byName"></bean>
 </beans>
