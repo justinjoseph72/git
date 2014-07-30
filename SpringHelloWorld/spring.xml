@@ -2,4 +2,13 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
 <beans>
 <bean id="triangle" class="com.justin.shapeImpl.Triangle"/>
+<bean id="circle" class="com.justin.shapeImpl.Circle"/>
+<bean id="square" class="com.justin.shapeImpl.Square"/>
+<bean id="calculateAge" class ="com.justin.businessLogic.calculation.impl.CalculateAgeImpl">
+<property name="myDOB" value="4"></property>
+</bean>
+<bean id="calculateSalary" class="com.justin.businessLogic.calculation.impl.CalculateSalary">
+<property name="basic" value="10000"></property>
+<property name="TA" value="100"></property>
+</bean>
 </beans>
